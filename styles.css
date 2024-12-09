@@ -1,0 +1,92 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  color: #333;
+}
+
+nav {
+  padding: 20px 0;
+}
+
+.home-button {
+  text-decoration: none;
+  color: #333;
+  background: #f0f0f0;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+header {
+  text-align: center;
+  margin: 40px 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.project-card {
+  margin-bottom: 60px;
+  padding: 20px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-tags {
+  margin-bottom: 15px;
+}
+
+.tag {
+  background: #f0f0f0;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+}
+
+.project-image {
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 4px solid #e0e0e0;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-links {
+  margin-top: 20px;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 20px;
+  color: #333;
+  background: #f0f0f0;
+}
+
+.project-links a:hover {
+  background: #e0e0e0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
