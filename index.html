@@ -7,59 +7,195 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav>
-      <a href="#" class="home-button">← Home</a>
-    </nav>
-
     <header>
-      <h1>Projects 🖼️</h1>
+      <h1>Projects</h1>
+      <p class="subtitle">
+        Emma Morris | Stanford CS |
+        <a
+          href="https://docs.google.com/document/d/1LDvkVIeXn7jXchCb1SrCZrMj4UTAWJtwLE7RHvFZmt0/edit?usp=sharing"
+          target="_blank"
+          class="header-link"
+          >Resume</a
+        >
+        |
+        <a
+          href="https://www.linkedin.com/in/emma-morris2/"
+          target="_blank"
+          class="header-link"
+          >LinkedIn</a
+        >
+      </p>
     </header>
 
     <main>
       <div class="project-card">
-        <div class="project-tags">
-          <span class="tag">JavaScript</span>
-        </div>
-        <h2>Bay Area Food Finder</h2>
-        <div class="project-image">
-          <img
-            src="path-to-your-image.jpg"
-            alt="Bay Area Food Finder Screenshot"
-          />
-        </div>
-        <p>
-          Using d3.js and a Yelp dataset, I implemented an interactive
-          visualization software that shows all coffee shops, cafes, and bubble
-          tea shops in a map of the Bay Area. This visualization will show shops
-          that lie in the intersection of the two circles and satisfies the
-          price, rating, and search constraints.
-        </p>
-        <div class="project-links">
-          <a href="#" class="demo-link">Demo</a>
-          <a href="#" class="github-link">GitHub</a>
+        <div class="flex-container">
+          <div class="project-image-container">
+            <img src="images/plated.png" alt="Plated App" />
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">React Native</span>
+            </div>
+
+            <h2>Plated App</h2>
+
+            <p>
+              Collaborated as part of a team to design and develop
+              <em>Plated</em>, a mobile app that helps users discover and share
+              recipes tailored to their preferences and pantry inventory.
+              Contributed to features like an AI chef assistant, pantry
+              management, and recipe uploading, fostering creativity,
+              organization, and inclusivity in the kitchen while making cooking
+              more accessible and enjoyable.
+            </p>
+
+            <p>
+              Click
+              <a
+                href="https://hci.stanford.edu/courses/cs147/2024/au/projects/Design-for-Healthy-Behaviors/Plated/"
+                target="_blank"
+                >here</a
+              >
+              to view our Plated website, detailing the entire design and
+              development process.
+            </p>
+
+            <div class="project-links">
+              <a href="https://youtu.be/j9SXlw8Pwrk" class="demo-link">Demo</a>
+              <a
+                href="https://github.com/ashleyvincent10/platedapp52"
+                class="github-link"
+                >GitHub</a
+              >
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="project-card">
-        <div class="project-tags">
-          <span class="tag">React</span>
-        </div>
-        <h2>BOSPies</h2>
-        <div class="project-image">
-          <img src="path-to-your-image.jpg" alt="BOSPies Screenshot" />
-        </div>
-        <p>
-          Our team created a social computing system where Stanford students who
-          are interested in study abroad and students who have previously done
-          the program can connect.
-        </p>
-        <div class="project-links">
-          <a href="#" class="demo-link">Demo</a>
-          <a href="#" class="github-link">GitHub</a>
+        <div class="flex-container">
+          <div class="project-image-container">
+            <img src="images/cheifs.png" alt="Chiefs Success Visualization" />
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">CSS</span>
+              <span class="tag">HTML</span>
+            </div>
+
+            <h2>Chiefs Success Visualization</h2>
+
+            <p>
+              Developed an interactive data visualization website analyzing the
+              success of the Kansas City Chiefs, showcasing their performance
+              metrics and strategic strengths. Leveraged web development tools
+              to create engaging, interactive visualizations, including dynamic
+              charts and infographics.
+            </p>
+
+            <div class="project-links">
+              <a href="https://youtu.be/PcaUBIecQ2c" class="demo-link">Demo</a>
+              <a href="#" class="github-link">GitHub</a>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Add more project cards as needed -->
+      <div class="project-card">
+        <div class="flex-container">
+          <div class="project-image-container">
+            <img src="images/chatbot.png" />
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">LLM</span>
+            </div>
+
+            <h2>Chat Bot</h2>
+
+            <p>
+              Built a Python-based chatbot that recommends movies using natural
+              language processing, sentiment analysis, and collaborative
+              filtering. Leveraged the MovieLens dataset (9,000+ movies) and
+              integrated a Large Language Model interface for advanced
+              conversational interactions. Ensured robust functionality through
+              rigorous testing and debugging.
+            </p>
+
+            <div class="project-links">
+              <a
+                href="https://github.com/e2morris33/CS124chatbot/blob/main/chatbot.py"
+                class="github-link"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="flex-container">
+          <div class="project-image-container">
+            <img src="images/bay.png" />
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+            </div>
+
+            <h2>Bay Area Finder</h2>
+
+            <p>
+              Developed an interactive data visualization tool using d3.js and a
+              Yelp dataset to map restaurants near the Bay Area. Implemented
+              filters for price, ratings, and location radius, enabling users to
+              explore shops that meet specific criteria within overlapping
+              regions of interest.
+            </p>
+
+            <div class="project-links">
+              <a
+                href="https://github.com/e2morris33/bayAreaFinder"
+                class="github-link"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="flex-container">
+          <div class="project-image-container">
+            <img src="images/spotify.png" alt="Spotify Top Tracks" />
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">React Native</span>
+            </div>
+
+            <h2>Spotify Top Tracks</h2>
+
+            <p>
+              Utilizing the Spotify API, I developed an app that allows users to
+              connect their Spotify accounts and explore their listening
+              patterns by browsing their top tracks or tracks from a specific
+              album in an intuitive and user-friendly interface.
+            </p>
+
+            <div class="project-links">
+              <a
+                href="https://github.com/cs147L-24au/e2morris/blob/main/A3-main/App.js"
+                class="github-link"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
