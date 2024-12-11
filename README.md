@@ -8,23 +8,19 @@ Hi! This is the code for my personal portfolio website where I showcase some coo
 ## Featured Projects
 - **Plated App** 
   - My CS147 group project for cooking & recipe management
-  - Demo shows main features with our AI chef assistant
   
 - **Chiefs Sports Data** 
   - Interactive visualization showing Chiefs performance stats
-  - Built this one while learning D3.js
   
 - **Movie Chatbot** 
-  - CS124 project using Python & ChatGPT
   - Helps find movies based on what you like
   
 - **Bay Area Food Finder** 
   - Maps out restaurants in the Bay using Yelp data
-  - Fun project to practice JavaScript
+
   
 - **Spotify Tracks** 
-  - Made this to check out my most-played songs
-  - First time using the Spotify API!
+  - Built an app to see my most-played songs using the Spotify API!
 
 ## Want to Run This?
 1. Download the files
