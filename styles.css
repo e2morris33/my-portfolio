@@ -1,92 +1,158 @@
+/* Base styles */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  background: #ffffff;
-  color: #333;
+  background: #fce4ec;
 }
-
-nav {
-  padding: 20px 0;
-}
-
-.home-button {
+.header-link {
+  color: #666; /* LinkedIn blue color */
   text-decoration: none;
-  color: #333;
-  background: #f0f0f0;
-  padding: 8px 16px;
-  border-radius: 20px;
+  transition: all 0.2s ease;
 }
 
+.header-link:hover {
+  color: #003c8f; /* Darker blue on hover */
+  text-decoration: underline;
+}
+/* Header styles */
 header {
   text-align: center;
-  margin: 40px 0;
+  margin: 2rem 0 3rem 0;
 }
 
 h1 {
-  font-size: 2.5rem;
-  margin: 0;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 0.5rem; /* Reduced bottom margin to bring subtitle closer */
+  font-weight: bold;
 }
 
+.subtitle {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+/* Project card styles */
 .project-card {
-  margin-bottom: 60px;
-  padding: 20px;
-  border-radius: 12px;
   background: white;
+  border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.2s;
 }
 
-.project-tags {
-  margin-bottom: 15px;
+/* Flex container */
+.flex-container {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
 }
 
-.tag {
-  background: #f0f0f0;
-  padding: 5px 12px;
-  border-radius: 15px;
-  font-size: 0.9rem;
-}
-
-.project-image {
-  margin: 20px 0;
-  border-radius: 8px;
+.project-image-container {
+  flex: 0 0 300px;
+  height: 300px; /* Increased height to prevent cutoff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
+  padding: 1rem; /* Add padding to prevent images from touching container edges */
+}
+
+.project-image-container img {
+  width: auto; /* Changed from 100% to auto */
+  height: auto; /* Changed to auto */
+  max-width: 100%; /* Ensure image doesn't overflow container width */
+  max-height: 100%; /* Ensure image doesn't overflow container height */
+  object-fit: contain; /* Changed from cover to contain to show full image */
+  border-radius: 8px;
   border: 4px solid #e0e0e0;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.project-image img {
-  width: 100%;
-  height: auto;
-  display: block;
+.project-image-container img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.project-links {
-  margin-top: 20px;
+/* Project content styles */
+.project-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
+.project-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  color: #333;
+}
+
+/* Tag styles */
+.tag {
+  font-size: 0.9rem;
+  padding: 4px 12px;
+  background: #f8f9fa; /* Lighter background */
+  color: #6c757d; /* Muted text color */
+  border: 1.5px solid #dee2e6; /* Add border */
+  border-radius: 6px; /* More squared corners compared to action buttons */
+  margin-right: 8px;
+  margin-bottom: 8px;
+  display: inline-block;
+  font-weight: 500; /* Slightly bolder text */
+}
+
+/* Link styles */
 .project-links a {
   display: inline-flex;
   align-items: center;
-  padding: 8px 16px;
+  padding: 8px 18px;
   margin-right: 10px;
   text-decoration: none;
   border-radius: 20px;
   color: #333;
   background: #f0f0f0;
+  font-size: 1.1rem;
+  transition: all 0.2s ease;
 }
 
 .project-links a:hover {
   background: #e0e0e0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive adjustments */
+/* Specific link type styles */
+.project-links .demo-link:hover {
+  background: #e8f5e9;
+  color: #1565c0;
+}
+
+.project-links .github-link:hover {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+/* Responsive design */
 @media (max-width: 768px) {
-  body {
-    padding: 15px;
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
   }
 
-  h1 {
-    font-size: 2rem;
+  .project-image-container,
+  .project-content {
+    flex: 1 0 100%;
+  }
+
+  .project-image-container {
+    height: 200px; /* Slightly smaller height on mobile */
   }
 }
